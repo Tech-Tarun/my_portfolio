@@ -1,2 +1,2 @@
-# my_portfolio
+# My Portfolio
 A Responsive Website designed using Django framework and bootstrap
