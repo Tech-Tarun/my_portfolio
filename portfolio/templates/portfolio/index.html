@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My_Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}">
+</head>
+
+<body class="bg-light">
+    <!--nav_baar_start-->
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand text-danger fw-bold fs-4" href="#">TARUN TRIPATHI</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#services">Services</a></li>
+                    <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#testimonial">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--nav_baar_end-->
+    <!--Home_start-->
+    <section class="home py-5">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="home-img text-center">
+                        {% load static %}
+                        <img src="{% static 'portfolio/img/pic1.jpg' %}" class="rounded-circle w-100" alt="profile img">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Hello I'm</p>
+                        <h1 class="text-danger text-uppercase fs-1 fw-bold">Software Developer</h1>
+                        <h2 class="fs-4">Take a look at My Portfolio</h2>
+                        <p class="mt-4 text-muted">Welcome! I am a part of the most extensively growing industry
+                            i.e the IT Industry. I welcome you to my profile. Take a minute
+                            and visit My Portfolio and My Projects.
+                        </p>
+                        <a class="btn btn-danger px-3 mt-3" href="#portfolio">My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home_End-->
+
+    <!--About_start-->
+    <section class="about py-5" id="about">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">About</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3 class="fs-4 mb-3">I am Post-Graduate in <i>Masters of Computer Applications(MCA)</i> </h3>
+                        <p class="text-muted">I belong to Kanpur, Uttar Pradesh.I have completed my 10+2 from I.S.C
+                            Board. Briefly I can
+                            describe myself as an IT Enthusiast. I have done my studies, basically in Science and
+                            Computer Science with that got graduated from Kanpur University i.e CSJMU, I have done my
+                            Masters in Computer Application from <q>Shri Ramswaroop Memorial
+                                University, Lucknow.</q>I am good at learning things quickly and easily which make me
+                            good at everything. I wanted to become a successfull Data Scientist, right now engaged with
+                            web development and software designing.
+                        </p>
+                    </div>
+                    <div class="row text-center text-uppercase my-3">
+                        <div class="col-sm-4">
+                            <div class="fact-item">
+                                <h4 class="fs-1 fw-bold">100</h4>
+                                <p class="text-muted">Project completed</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="fact-item">
+                                <h4 class="fs-1 fw-bold">90</h4>
+                                <p class="text-muted">Happy Client</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="fact-item">
+                                <h4 class="fs-1 fw-bold">95</h4>
+                                <p class="text-muted">Positive Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <a href="https://drive.google.com/uc?id=1C5jvjH4yWtJToPNqNR2-xowHWhElLJfF&export=download"
+                                class="btn btn-danger mx-3 me-5">Download CV</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Python</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Django</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Data Structures & Algorithms</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;"
+                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">HTML</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Css / Bootstrap</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About_end-->
+
+    <!--Services_start-->
+    <section class="services py-5" id="services">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">What I Do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon">
+                            <img class="mb-3 rounded-circle" style="height: 150px;width: 150px;"
+                                src="https://icon-library.com/images/django-icon/django-icon-0.jpg" alt="image">
+                        </div>
+                        <h3 class="fs-5 fw-bold py-3">Django Web Development</h3>
+                        <p class="text-muted">Django is a Python-based free and open-source web framework that follows
+                            the
+                            model-template-views architectural pattern. It is maintained by the Django Software
+                            Foundation, an American independent organization established as a 501 non-profit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon">
+                            <img class="mb-3 rounded-circle" style="height: 150px;width: 150px;"
+                                src="https://image.freepik.com/free-vector/gradient-coding-logo-template_23-2148809439.jpg"
+                                alt="
+                                image">
+                            <h3 class="fs-5 fw-bold py-3">Coding</h3>
+                            <p class="text-muted">Python is a general-purpose coding language, which means that, unlike
+                                HTML, CSS, and
+                                JavaScript, it can be used for other types of programming and software development
+                                besides
+                                web development. That includes back end development, software development, data science
+                                and
+                                writing system scripts among other things.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon ">
+                            <img class="mb-3 rounded-circle" style="height: 150px;width: 150px;"
+                                src="https://cdn.shopify.com/s/files/1/0279/3963/5248/files/software-development-logo.svg?528"
+                                alt="
+                                image">
+                            <h3 class="fs-5 fw-bold py-3">Software Development</h3>
+                            <p class="text-muted">Software development is the process of conceiving, specifying,
+                                designing,
+                                programming,
+                                documenting, testing, and bug fixing involved in creating and maintaining
+                                applications,
+                                frameworks, or other software components.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services_end-->
+
+    <!--Portfolio_start-->
+    <section class="portfolio py-5" id="portfolio">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Latest Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="w-100 img-thumbnail" src="{% static 'portfolio/img/tex.png' %}"
+                            alt="text  conversion">
+                        <h3 class="text-capitalize fs-5 my-2">text conversion utility</h3>
+                        <p class="mb-4"><a href="#" class="text-danger text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="w-100 img-thumbnail" src="{% static 'portfolio/img/vir.png' %}"
+                            alt="Virtual-Assistant.img">
+                        <h3 class="text-capitalize fs-5 my-2">Personal Virtual Assistant</h3>
+                        <p class="mb-4"><a href="https://github.com/Tech-Tarun/Virtual-Assistant"
+                                class="text-danger text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="w-100 img-thumbnail" src="{% static 'portfolio/img/num.png' %}"
+                            alt="Number-to-Words-Translator.img">
+                        <h3 class="text-capitalize fs-5 my-2">Number to Word Convertor</h3>
+                        <p class="mb-4"><a href="https://github.com/Tech-Tarun/Number-to-Words-Translator"
+                                class="text-danger text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="w-100 img-thumbnail" src="{% static 'portfolio/img/per.png' %}"
+                            alt="Percentage.img">
+                        <h3 class="text-capitalize fs-5 my-2">Percentage Predictor</h3>
+                        <p class="mb-4"><a href="https://github.com/Tech-Tarun/Percentage-Predictor"
+                                class="text-danger text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="w-100 img-thumbnail" src="{% static 'portfolio/img/lib.png' %}"
+                            alt="Library-Management-System.img">
+                        <h3 class="text-capitalize fs-5 my-2">Library Management System</h3>
+                        <p class="mb-4"><a href="https://github.com/Tech-Tarun/Library-Management-System"
+                                class="text-danger text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="w-100 img-thumbnail" src="{% static 'portfolio/img/por.png' %}" alt="Portfolio.img">
+                        <h3 class="text-capitalize fs-5 my-2">My Portfolio</h3>
+                        <p class="mb-4"><a href="#" class="text-danger text-decoration-none">Live Demo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio_end-->
+
+    <!--Freelancer_start-->
+    <section class="freelancer-available py-5 bg-danger" id="freelancer">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="text-light fs-5">Do you have any Projects ?</p>
+                    <h2 class="text-white fs-1 mb-4">I'm Available for Freelancer Projects</h2>
+                    <a href="#message" class="btn btn-outline-light">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Freelancer_end-->
+
+    <!--Testimonial_start-->
+    <section class="testimonial py-5" id="testimonial">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" class="bg-danger"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" class="bg-danger"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner p-1">
+                            <!--testi-item_start-->
+                            <div class="testi-item carousel-item active bg-white shadow-sm rounded p-4 mb-5 ">
+                                <div class="testi-author-info d-flex align-items-center">
+                                    <img src="{% static 'portfolio/img/thum3.png' %}"
+                                        class="img-thumbnail d-block rounded-circle" alt="img">
+                                    <div class="author ms-3 ">
+                                        <h3 class="fs-5 mb-1 ">Harrison Wells</h3>
+                                        <p class="text-muted m-0">SEO Manager</p>
+                                        <div class="rating text-danger mt-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <!--testi-item_end-->
+                            <!--testi-item_start-->
+                            <div class="testi-item carousel-item bg-white shadow-sm rounded p-4 mb-5">
+                                <div class="testi-author-info d-flex align-items-center">
+                                    <img src="{% static 'portfolio/img/thum1.png' %}"
+                                        class="img-thumbnail d-block rounded-circle" alt="img">
+                                    <div class="author ms-3 ">
+                                        <h3 class="fs-5 mb-1 ">Chris Evans</h3>
+                                        <p class="text-muted m-0">Senior Manager</p>
+                                        <div class="rating text-danger mt-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <!--testi-item_end-->
+                            <!--testi-item_start-->
+                            <div class="testi-item carousel-item bg-white shadow-sm rounded p-4 mb-5">
+                                <div class="testi-author-info d-flex align-items-center">
+                                    <img src="{% static 'portfolio/img/thum2.png' %}"
+                                        class="img-thumbnail d-block rounded-circle" alt="img">
+                                    <div class="author ms-3 ">
+                                        <h3 class="fs-5 mb-1 ">Shera Carter</h3>
+                                        <p class="text-muted m-0">CEO</p>
+                                        <div class="rating text-danger mt-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do
+                                    eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <!--testi-item_end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--testimonial_end-->
+
+    <!--Contact_start-->
+    <section class="contact py-5" style="background-color: rgb(13, 23, 56);" id="contact">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5 text-white">Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-5 ">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5 text-white">Email</h3>
+                            <p class=" text-white">tripathi.tarun8@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5 text-white">Phone</h3>
+                            <p class="text-white">7905059882</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5 text-white">Address</h3>
+                            <p class="text-white ">665, Damodar Nagar, Near Vaishno Devi Mandir,
+                                Naubasta, Barra, Kanpur - 208027
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social-links text-center" style="margin-top: 36px;">
+                        <a href="https://www.facebook.com/t.t.tarun231/" class="text-light me-5"><i
+                                class="fab fa-facebook fs-4"></i></a>
+                        <a href="https://twitter.com/Tarun8090" class="text-light me-5"><i
+                                class="fab fa-twitter fs-4"></i></a>
+                        <a href="https://www.instagram.com/tarun_tripathirules/" class="text-light me-5"><i
+                                class="fab fa-instagram fs-4"></i></a>
+                        <a href="https://www.linkedin.com/in/tarun-tripathi-a53537152/" class="text-light me-5"><i
+                                class="fab fa-linkedin-in fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <form action="Analyse" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" name="name" id="name" placeholder="Your Name"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <input type="email" name="email" id="email" placeholder="Your Email"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <input type="text" name="subject" id="subject" placeholder="Subject"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <textarea rows=5 name="message" id="message" placeholder="Your Message"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4 align-items-center">
+                                    <button type="submit" id="submit" class="btn btn-danger mx-3 me-5"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!--modal_start
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Thankyou for Contacting..!!
+                                            </h5>
+                                            <button type="button" class="btn" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Your Message has been sent successfully</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">OK</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            modal_end-->
+
+                            <!--
+                            <div class="row">
+                                <div class="col-lg-12 mb-4 align-items-center">
+                                    <button id="submit" class="btn btn-danger mx-3 me-5">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact_end-->
+
+    <!--Footer_start-->
+    <section class="footer border-top  py-2" style="background-color: rgb(13, 23, 56);">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="m-0 text-center text-white"> &copy;All rights reserved | 2021 Tech_Tarun</p>
+                    <p class="m-0 text-center text-white">Designed by Tarun Tripathi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% load static %}
+    <script src="{% static 'portfolio/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>
